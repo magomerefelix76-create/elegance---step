@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Elegance Step | Ladies Shoes Kenya</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  color:#241d20;
+  background:#fff;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+.top{
+  background:#241d20;
+  color:white;
+  text-align:center;
+  padding:10px;
+  font-size:13px;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:white;
+  border-bottom:1px solid #eee;
+}
+
+.nav{
+  max-width:1150px;
+  margin:auto;
+  padding:16px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-family:Georgia,serif;
+  font-size:26px;
+  font-weight:bold;
+}
+
+.logo span{
+  color:#a95767;
+}
+
+nav{
+  display:flex;
+  gap:25px;
+}
+
+nav a{
+  text-decoration:none;
+  color:#241d20;
+  font-weight:bold;
+}
+
+.cart-button{
+  background:#241d20;
+  color:white;
+  border:none;
+  padding:11px 17px;
+  border-radius:25px;
+  cursor:pointer;
+}
+
+.hero{
+  background:linear-gradient(120deg,#fbf6f3,#f7e8eb);
+}
+
+.hero-content{
+  max-width:1150px;
+  margin:auto;
+  padding:80px 20px;
+  text-align:center;
+}
+
+.hero small{
+  color:#9b5361;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.hero h1{
+  font-family:Georgia,serif;
+  font-size:65px;
+  margin:20px 0;
+}
+
+.hero h1 span{
+  color:#a95767;
+}
+
+.hero p{
+  max-width:650px;
+  margin:auto;
+  color:#756b70;
+  font-size:18px;
+  line-height:1.6;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 25px;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.dark{
+  background:#241d20;
+  color:white;
+}
+
+.whatsapp{
+  background:#25d366;
+  color:white;
+  margin-left:8px;
+}
+
+section{
+  padding:70px 20px;
+}
+
+.container{
+  max-width:1150px;
+  margin:auto;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.section-title h2{
+  font-family:Georgia,serif;
+  font-size:40px;
+  margin:10px 0;
+}
+
+.section-title p{
+  color:#756b70;
+}
+
+.products{
+  background:#fbf6f3;
+}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.product{
+  background:white;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.product-image{
+  height:280px;
+  background:#eee;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#777;
+  font-size:15px;
+  text-align:center;
+}
+
+.product-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.product-info{
+  padding:18px;
+}
+
+.product-info h3{
+  margin-bottom:7px;
+}
+
+.price{
+  font-size:21px;
+  font-weight:bold;
+  margin:12px 0;
+}
+
+.options{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+}
+
+select{
+  width:100%;
+  padding:10px;
+  border:1px solid #ddd;
+  border-radius:8px;
+  background:white;
+}
+
+.add{
+  width:100%;
+  margin-top:12px;
+  padding:12px;
+  background:#a95767;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+.about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+
+.about-box{
+  background:#fbf6f3;
+  padding:40px;
+  border-radius:20px;
+}
+
+.about h2{
+  font-family:Georgia,serif;
+  font-size:42px;
+  margin:15px 0;
+}
+
+.about p{
+  color:#756b70;
+  line-height:1.7;
+  margin-bottom:15px;
+}
+
+.how{
+  background:#241d20;
+  color:white;
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.step{
+  border:1px solid #51484c;
+  border-radius:15px;
+  padding:25px;
+}
+
+.step-number{
+  font-family:Georgia,serif;
+  font-size:35px;
+  color:#e3a0aa;
+  margin-bottom:15px;
+}
+
+.step p{
+  color:#ccc;
+  margin-top:10px;
+}
+
+.contact{
+  text-align:center;
+}
+
+footer{
+  background:#171214;
+  color:#aaa;
+  padding:40px 20px;
+  text-align:center;
+}
+
+footer .logo{
+  color:white;
+}
+
+.cart-overlay,
+.checkout-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.65);
+  z-index:50;
+  display:none;
+}
+
+.cart-overlay.active,
+.checkout-overlay.active{
+  display:block;
+}
+
+.cart{
+  position:absolute;
+  right:0;
+  top:0;
+  width:450px;
+  max-width:100%;
+  height:100%;
+  background:white;
+  padding:25px;
+  overflow:auto;
+}
+
+.close{
+  float:right;
+  border:none;
+  background:#eee;
+  padding:8px 12px;
+  border-radius:50%;
+  cursor:pointer;
+}
+
+.cart h2{
+  font-family:Georgia,serif;
+  margin-bottom:25px;
+}
+
+.cart-item{
+  display:grid;
+  grid-template-columns:65px 1fr auto;
+  gap:12px;
+  padding:15px 0;
+  border-bottom:1px solid #eee;
+}
+
+.cart-item img{
+  width:65px;
+  height:65px;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+.cart-item small{
+  color:#777;
+}
+
+.quantity{
+  margin-top:8px;
+}
+
+.quantity button{
+  padding:3px 8px;
+  border:1px solid #ddd;
+  background:white;
+  cursor:pointer;
+}
+
+.total{
+  font-size:22px;
+  font-weight:bold;
+  margin:25px 0;
+}
+
+.checkout-button{
+  width:100%;
+  padding:14px;
+  background:#25d366;
+  color:white;
+  border:none;
+  border-radius:10px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.checkout-box{
+  background:white;
+  max-width:500px;
+  margin:7vh auto;
+  padding:25px;
+  border-radius:18px;
+}
+
+.field{
+  margin:15px 0;
+}
+
+.field label{
+  display:block;
+  font-weight:bold;
+  margin-bottom:6px;
+}
+
+.field input,
+.field textarea{
+  width:100%;
+  padding:12px;
+  border:1px solid #ddd;
+  border-radius:8px;
+}
+
+.field textarea{
+  min-height:90px;
+}
+
+.payment{
+  background:#f7e9ec;
+  padding:15px;
+  border-radius:10px;
+  line-height:1.7;
+}
+
+@media(max-width:800px){
+
+nav{
+  display:none;
+}
+
+.hero h1{
+  font-size:48px;
+}
+
+.product-grid{
+  grid-template-columns:repeat(2,1fr);
+}
+
+.about{
+  grid-template-columns:1fr;
+}
+
+.steps{
+  grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:520px){
+
+.product-grid{
+  grid-template-columns:1fr;
+}
+
+.steps{
+  grid-template-columns:1fr;
+}
+
+.hero h1{
+  font-size:42px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="top">
+🇰🇪 Elegance Step • Ladies Shoes • Kenya • M-Pesa Only
+</div>
+
+<header>
+<div class="nav">
+
+<a href="#" class="logo">
+Elegance <span>Step</span>
+</a>
+
+<nav>
+<a href="#shop">Shop</a>
+<a href="#about">About</a>
+<a href="#how">How to Order</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<button class="cart-button" onclick="openCart()">
+🛒 Cart (<span id="cartCount">0</span>)
+</button>
+
+</div>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<small>LADIES FOOTWEAR • KENYA</small>
+
+<h1>
+Walk With <span>Elegance.</span>
+</h1>
+
+<p>
+Discover stylish and affordable ladies' shoes.
+Choose your size and colour, add your favourite pair
+to the cart and send your order directly to WhatsApp.
+</p>
+
+<a href="#shop" class="btn dark">
+Shop Shoes
+</a>
+
+<a href="https://wa.me/254799875188" class="btn whatsapp">
+WhatsApp Us
+</a>
+
+</div>
+
+</section>
+
+
+<section id="shop" class="products">
+
+<div class="container">
+
+<div class="section-title">
+
+<small>OUR COLLECTION</small>
+
+<h2>Choose Your Style</h2>
+
+<p>
+Sizes 30–43 • Black • White • Red • Pink • Blue • Yellow • Grey
+</p>
+
+</div>
+
+<div class="product-grid" id="productGrid"></div>
+
+</div>
+
+</section>
+
+
+<section id="about">
+
+<div class="container about">
+
+<div class="about-box">
+
+<small>ABOUT ELEGANCE STEP</small>
+
+<h2>
+Style That Makes Every Step Count.
+</h2>
+
+<p>
+Elegance Step is a Kenyan online ladies' footwear business
+focused on stylish, affordable and comfortable shoes.
+</p>
+
+<p>
+We make ordering simple through our online shop and WhatsApp.
+</p>
+
+<p>
+<strong>M-Pesa Till:</strong> 5369232
+</p>
+
+<p>
+<strong>Store Number:</strong> 8113863
+</p>
+
+<p>
+<strong>WhatsApp:</strong> +254 799 875 188
+</p>
+
+</div>
+
+<div>
+<h2>Why Shop With Us?</h2>
+
+<p>✓ Stylish ladies' footwear</p>
+<p>✓ Affordable prices</p>
+<p>✓ Multiple sizes</p>
+<p>✓ Multiple colours</p>
+<p>✓ Easy WhatsApp ordering</p>
+<p>✓ M-Pesa payments</p>
+<p>✓ Delivery available in Kenya</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="how" class="how">
+
+<div class="container">
+
+<div class="section-title">
+
+<small style="color:#e3a0aa">
+EASY SHOPPING
+</small>
+
+<h2>How To Order</h2>
+
+</div>
+
+<div class="steps">
+
+<div class="step">
+<div class="step-number">01</div>
+<h3>Choose</h3>
+<p>Select your favourite shoe.</p>
+</div>
+
+<div class="step">
+<div class="step-number">02</div>
+<h3>Select</h3>
+<p>Choose your size and colour.</p>
+</div>
+
+<div class="step">
+<div class="step-number">03</div>
+<h3>Add To Cart</h3>
+<p>Review your selected shoes.</p>
+</div>
+
+<div class="step">
+<div class="step-number">04</div>
+<h3>Order & Pay</h3>
+<p>Pay via M-Pesa and send your order through WhatsApp.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+<div class="container">
+
+<small>CONTACT US</small>
+
+<h2>Ready For Your Next Pair?</h2>
+
+<p>
+WhatsApp Elegance Step for orders and delivery information.
+</p>
+
+<a class="btn whatsapp"
+href="https://wa.me/254799875188?text=Hello%20Elegance%20Step%2C%20I%20want%20to%20order%20shoes.">
+Chat On WhatsApp
+</a>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="logo">
+Elegance <span>Step</span>
+</div>
+
+<p>
+Step Into Your Confidence.
+</p>
+
+<p>
+© 2026 Elegance Step. All Rights Reserved.
+</p>
+
+</footer>
+
+
+<!-- CART -->
+
+<div class="cart-overlay" id="cartOverlay">
+
+<div class="cart">
+
+<button class="close" onclick="closeCart()">✕</button>
+
+<h2>Your Cart</h2>
+
+<div id="cartItems"></div>
+
+<div id="cartTotal"></div>
+
+</div>
+
+</div>
+
+
+<!-- CHECKOUT -->
+
+<div class="checkout-overlay" id="checkoutOverlay">
+
+<div class="checkout-box">
+
+<button class="close" onclick="closeCheckout()">✕</button>
+
+<h2>Checkout</h2>
+
+<form id="checkoutForm">
+
+<div class="field">
+
+<label>Full Name</label>
+
+<input id="customerName" required>
+
+</div>
+
+<div class="field">
+
+<label>Phone Number</label>
+
+<input id="customerPhone" required>
+
+</div>
+
+<div class="field">
+
+<label>Delivery Location</label>
+
+<textarea id="deliveryLocation" required></textarea>
+
+</div>
+
+<div class="field">
+
+<label>M-Pesa Transaction Code</label>
+
+<input id="mpesaCode"
+placeholder="Example: QAB123XYZ">
+
+</div>
+
+<div class="payment">
+
+<strong>M-Pesa Payment</strong><br>
+
+Till Number:
+<strong>5369232</strong><br>
+
+Store Number:
+<strong>8113863</strong><br>
+
+Please pay using M-Pesa and enter your transaction code above.
+
+</div>
+
+<button class="checkout-button" type="submit">
+Send Order To WhatsApp
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+
+<script>
+
+const products = [
+
+{
+name:"Elegant Bow Flats",
+price:899,
+image:"shoe1.jpeg"
+},
+
+{
+name:"Crystal Bow Ballet Flats",
+price:999,
+image:"shoe2.jpeg"
+},
+
+{
+name:"Polka-Dot Bow Sandals",
+price:799,
+image:"shoe3.jpeg"
+},
+
+{
+name:"Glam Bow Flat Sandals",
+price:899,
+image:"shoe4.jpeg"
+},
+
+{
+name:"Sparkle Fashion Slides",
+price:799,
+image:"shoe5.jpeg"
+},
+
+{
+name:"Classic Black Bow Flats",
+price:899,
+image:"shoe6.jpeg"
+}
+
+];
+
+const sizes=[
+30,31,32,33,34,35,36,
+37,38,39,40,41,42,43
+];
+
+const colours=[
+"Black",
+"White",
+"Red",
+"Pink",
+"Blue",
+"Yellow",
+"Grey"
+];
+
+let cart=[];
+
+
+function money(amount){
+
+return "KSh " +
+amount.toLocaleString("en-KE");
+
+}
+
+
+function displayProducts(){
+
+let html="";
+
+products.forEach((product,index)=>{
+
+html+=`
+
+<div class="product">
+
+<div class="product-image">
+
+<img
+src="${product.image}"
+alt="${product.name}"
+>
+
+</div>
+
+<div class="product-info">
+
+<h3>
+${product.name}
+</h3>
+
+<div class="price">
+${money(product.price)}
+</div>
+
+<div class="options">
+
+<select id="size${index}">
+
+${sizes.map(size=>
+`<option value="${size}">
+Size ${size}
+</option>`
+).join("")}
+
+</select>
+
+
+<select id="colour${index}">
+
+${colours.map(colour=>
+`<option>
+${colour}
+</option>`
+).join("")}
+
+</select>
+
+</div>
+
+<button
+class="add"
+onclick="addToCart(${index})">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>
+
+`;
+
+});
+
+document.getElementById("productGrid").innerHTML=html;
+
+}
+
+
+function addToCart(index){
+
+const size=
+document.getElementById("size"+index).value;
+
+const colour=
+document.getElementById("colour"+index).value;
+
+const existing=
+cart.find(item=>
+item.index===index &&
+item.size===size &&
+item.colour===colour
+);
+
+if(existing){
+
+existing.quantity++;
+
+}else{
+
+cart.push({
+index:index,
+size:size,
+colour:colour,
+quantity:1
+});
+
+}
+
+renderCart();
+
+openCart();
+
+}
+
+
+function renderCart(){
+
+document.getElementById("cartCount").textContent=
+cart.reduce(
+(total,item)=>total+item.quantity,
+0
+);
+
+const items=
+document.getElementById("cartItems");
+
+const totalBox=
+document.getElementById("cartTotal");
+
+if(cart.length===0){
+
+items.innerHTML=
+"<p>Your cart is empty.</p>";
+
+totalBox.innerHTML="";
+
+return;
+
+}
+
+let total=0;
+
+items.innerHTML=
+cart.map((item,index)=>{
+
+const product=
+products[item.index];
+
+const subtotal=
+product.price*item.quantity;
+
+total+=subtotal;
+
+return `
+
+<div class="cart-item">
+
+<img src="${product.image}">
+
+<div>
+
+<strong>
+${product.name}
+</strong>
+
+<br>
+
+<small>
+Size ${item.size} •
+${item.colour}
+</small>
+
+<br>
+
+${money(product.price)}
+× ${item.quantity}
+
+<div class="quantity">
+
+<button onclick="changeQuantity(${index},-1)">
+−
+</button>
+
+${item.quantity}
+
+<button onclick="changeQuantity(${index},1)">
++
+</button>
+
+</div>
+
+</div>
+
+<strong>
+${money(subtotal)}
+</strong>
+
+</div>
+
+`;
+
+}).join("");
+
+
+totalBox.innerHTML=`
+
+<div class="total">
+Total: ${money(total)}
+</div>
+
+<button
+class="checkout-button"
+onclick="openCheckout()">
+
+Continue To Checkout
+
+</button>
+
+`;
+
+}
+
+
+function changeQuantity(index,change){
+
+cart[index].quantity+=change;
+
+if(cart[index].quantity<=0){
+
+cart.splice(index,1);
+
+}
+
+renderCart();
+
+}
+
+
+function openCart(){
+
+document
+.getElementById("cartOverlay")
+.classList.add("active");
+
+}
+
+
+function closeCart(){
+
+document
+.getElementById("cartOverlay")
+.classList.remove("active");
+
+}
+
+
+function openCheckout(){
+
+if(cart.length===0){
+
+return;
+
+}
+
+closeCart();
+
+document
+.getElementById("checkoutOverlay")
+.classList.add("active");
+
+}
+
+
+function closeCheckout(){
+
+document
+.getElementById("checkoutOverlay")
+.classList.remove("active");
+
+}
+
+
+document
+.getElementById("checkoutForm")
+.addEventListener("submit",function(event){
+
+event.preventDefault();
+
+const name=
+document.getElementById("customerName").value;
+
+const phone=
+document.getElementById("customerPhone").value;
+
+const location=
+document.getElementById("deliveryLocation").value;
+
+const code=
+document.getElementById("mpesaCode").value;
+
+let total=0;
+
+let order="";
+
+cart.forEach(item=>{
+
+const product=
+products[item.index];
+
+const subtotal=
+product.price*item.quantity;
+
+total+=subtotal;
+
+order+=
+"• "+product.name+
+" | Size "+item.size+
+" | "+item.colour+
+" | Qty "+item.quantity+
+" | "+money(subtotal)+
+"\n";
+
+});
+
+
+const message=
+"Hello Elegance Step!%0A%0A"+
+"NEW ORDER%0A"+
+"Name: "+encodeURIComponent(name)+"%0A"+
+"Phone: "+encodeURIComponent(phone)+"%0A"+
+"Location: "+encodeURIComponent(location)+"%0A"+
+"M-Pesa Code: "+encodeURIComponent(code || "Not provided")+"%0A%0A"+
+encodeURIComponent(order)+
+"%0ATotal: "+encodeURIComponent(money(total))+
+"%0A%0AM-Pesa Till: 5369232"+
+"%0AStore Number: 8113863";
+
+window.open(
+"https://wa.me/254799875188?text="+message,
+"_blank"
+);
+
+});
+
+
+displayProducts();
+
+renderCart();
+
+</script>
+
+</body>
+</html>
